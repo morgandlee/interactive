@@ -1,0 +1,26 @@
+h2,h3,h4,h5,h6 {
+    font-family: 'Lemonada', cursive;
+    text-align: center;
+    text-transform: Capitalize;
+}
+
+h1 {
+    font-size: 50px;
+    font-family: 'Raleway Dots', cursive;
+    text-align: center;
+    text-transform: uppercase;
+    }
+p {
+    font-size: 25px;
+    font-family: 'Raleway Dots', cursive;
+    text-align: center;
+    text-transform: capitalize;
+    }
+body {
+    margin: 10px 30px 10px 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 400px;
+    line-height: 190%
+    }
+        

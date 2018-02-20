@@ -1,0 +1,43 @@
+h3,h4,h5,h6 {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    text-align: center;
+    text-transform: Capitalize;
+    font-style: oblique;
+    font-weight: 300
+}
+
+h1 {
+    font-size: 60px;
+    font-family: 'Acme', sans-serif;
+    text-align: left;
+    text-transform: uppercase;
+    }
+h2 {
+    font-size: 45px;
+    font-family: 'Acme', sans-serif;
+    text-align: right;
+    text-transform: Capitalize;
+    color: lightseagreen
+}
+p {
+    font-size: 30px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    text-align: center;
+    color: royalblue
+    }
+body {
+    margin: 10px 30px 10px 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 800px;
+    line-height: 190%
+    }
+.red {
+    color: red;
+    font-style: italic;
+}
+.blue {
+    color:darkblue;
+    font-stretch: semi-condensed;
+    font-style: oblique
+}
