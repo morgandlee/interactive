@@ -1,0 +1,27 @@
+p {
+    font-size: 50px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    text-align: justify;
+    color: royalblue;
+    font-style: normal;
+    text-transform: uppercase
+    }
+body {
+    margin: 10px 30px 10px 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    width:925px;
+    }
+.darkseagreen {
+    color: darkseagreen;
+    }
+.darkolivegreen {
+    color:darkolivegreen;
+    }
+.darkgreen {
+    color: darkgreen;
+    }
+.forestgreen{
+    color:forestgreen
+    }
+

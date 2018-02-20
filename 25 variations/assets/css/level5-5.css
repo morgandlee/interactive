@@ -1,0 +1,29 @@
+body {
+    margin: 40px 40px 40px 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    width:926px;
+    font-size: 25px;
+    color:purple;
+    text-align: center;
+    line-height: 100%
+    }
+p {
+    text-transform: lowercase;
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-stretch:expanded; 
+}
+h1 {
+    font-family: 'Palanquin Dark', sans-serif;
+    text-transform: uppercase;
+    color:rosybrown;
+    font-size: 80px;
+    
+    }
+h2 {
+    font-family: 'Palanquin Dark', sans-serif;
+    text-transform: uppercase;
+    color:lavender;
+    font-size: 60px;         
+    margin: 0px 10px 20px 10px;
+}

@@ -1,0 +1,43 @@
+h1 {
+    font-family: 'Russo One', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 80px;
+    }
+h2 {
+    font-size: 50px;
+    font-family: 'Russo One', sans-serif;
+    }
+h3 {
+    font-family: 'Rajdhani', sans-serif;
+    text-align: center;
+    font-size: 30px;
+    }
+h4{
+    font-family: 'Rajdhani', sans-serif;
+    text-align: center;
+    font-size: 28px;
+    }
+h5{
+    font-family: 'Rajdhani', sans-serif;
+    text-align: center;
+    font-size: 25px;
+}
+h6 {
+   font-family: 'Rajdhani', sans-serif;
+    text-align: center;
+    font-size: 23px; 
+}
+p {
+    font-size: 18px;
+    font-family: "rajdhani";
+    }
+
+body {
+    margin: 40px 70px 40px 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 800px;
+    height: 900px;
+    }
+        

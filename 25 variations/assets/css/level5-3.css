@@ -1,0 +1,33 @@
+h1{
+    font-size: 70px;
+    font-family: 'Jacques Francois', serif;
+    color:lightsteelblue;
+    margin: 20px auto;
+}
+h2{
+    font-size: 60px;
+    font-family: 'Jacques Francois', serif;
+    color:peachpuff;
+    margin: 20px auto;
+}
+h3{
+    font-size: 40px;
+    font-family: 'Jacques Francois', serif;
+    color: lightblue;
+    margin: 20px auto;
+}
+h4{
+    font-size: 45px;
+    font-family: 'Jacques Francois', serif;
+    color: #ffb38a;
+    margin: 20px auto;
+
+}
+body {
+    margin: 40px 40px 40px 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    width:1500px;
+    text-transform: Capitalize;
+    line-height: 85%
+    }
