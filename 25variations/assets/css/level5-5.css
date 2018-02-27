@@ -3,22 +3,22 @@ body {
     padding-left: 50px;
     padding-right: 50px;
     width:926px;
-    font-size: 25px;
-    color:purple;
-    text-align: center;
-    line-height: 100%
+    line-height: 100%;
     }
 p {
     text-transform: lowercase;
     font-family: 'Saira Extra Condensed', sans-serif;
     font-stretch:expanded; 
-}
+    font-size: 25px;
+    color:purple;
+    text-align: center;
+    }
 h1 {
     font-family: 'Palanquin Dark', sans-serif;
     text-transform: uppercase;
     color:rosybrown;
     font-size: 80px;
-    
+    text-align: center;
     }
 h2 {
     font-family: 'Palanquin Dark', sans-serif;
@@ -26,4 +26,5 @@ h2 {
     color:lavender;
     font-size: 60px;         
     margin: 0px 10px 20px 10px;
+    text-align: center;
 }

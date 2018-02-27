@@ -1,21 +1,26 @@
 .right{
     text-align: right;
-    margin: 0px auto
-}
+    margin: 0px auto;
+    text-transform: Capitalize;
+    font-family: 'Jura', sans-serif;
+    font-stretch:ultra-expanded;
+    font-size: 30px;
+    color:darkgray;
+    }
 .left{
     text-align: left;
-    margin: 0px auto
-}
+    margin: 0px auto;
+    text-transform: Capitalize;
+    font-family: 'Jura', sans-serif;
+    font-stretch:ultra-expanded;
+    font-size: 30px;
+    color:darkgray;
+    }
 body {
     margin: 40px 40px 40px 40px;
     padding-left: 50px;
     padding-right: 50px;
     width:500px;
-    text-transform: Capitalize;
-    font-family: 'Jura', sans-serif;
-    font-stretch:ultra-expanded;
-    font-size: 30px;
-    color:darkgray
     }
 .water {
     color:dodgerblue;
