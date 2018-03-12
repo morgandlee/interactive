@@ -1,0 +1,366 @@
+/*
+
+CSS DRAWINGS s2018
+
+* * * * * * * * * * * * * * * * * *
+
+Full CSS Reset
+
+http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+/*
+  ========================================
+  Box model reset
+  ========================================
+*/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*
+  ========================================
+  Grid
+  ========================================
+*/
+
+.canvas {
+    display: block;
+    position: relative;
+    background-color: rgb(240,240,240);
+    border: solid 20px rgb(245,245,245);
+    box-shadow: 15px 15px 25px rgba(230, 222, 159, 0.78);
+    margin: 60px auto;
+    padding: 20px;
+    width: 900px;
+    height: 600px;
+}
+
+/*
+  ========================================
+  General
+  ========================================
+*/
+
+body{
+    background-color: rgb(255, 248, 224);
+}
+.hair{
+    border-style: solid;
+    border-color: slategray;
+    border-width: 0 55px 30px 55px;
+    height: 50px;
+    width: 250px;
+    position: absolute;
+    margin: 20px 0 50px 0;
+    left: 37%;
+}
+.head {
+    width: 200px;
+	height: 100px;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-top: 100px solid rebeccapurple;
+    position: absolute;
+    top: 15%;
+    left:40%
+}
+.neck{
+    width: 40px;
+	height: 50px;
+    background: rebeccapurple;
+    position: absolute;
+    top: 32%;
+    left:49%;
+}
+.dress{
+    border-bottom: 100px solid plum;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	height: 0;
+	width: 200px;
+    position: absolute;
+    top: 40%;
+    left: 39.5%;
+}
+.dress2{
+    border-bottom: 100px solid pink;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	height: 0;
+	width: 210px;
+    position: absolute;
+    top: 55%;
+    left: 39%;
+
+}
+.dress3{
+    border-bottom: 100px solid plum;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	height: 0;
+	width: 250px;
+    position: absolute;
+    top: 65%;
+    left: 37%;
+}
+.dress4{
+    border-bottom: 100px solid pink;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	height: 0;
+	width: 260px;
+    position: absolute;
+    top: 78%;
+    left: 36%;
+}
+.dress5{
+    border-bottom: 100px solid plum;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	height: 0;
+	width: 280px;
+    position: absolute;
+    top: 85%;
+    left: 35%;
+    overflow: hidden;
+}
+.eye-left{
+    position: absolute;
+    background-color: dodgerblue;
+    width: 15px;
+    height: 20px;
+    top: 17%;
+    left: 45%;
+    border-radius: 50%;
+    }
+.eye-right{
+    position: absolute;
+    background-color: dodgerblue;
+    width: 15px;
+    height: 20px;
+    top: 17%;
+    right: 42%;
+    border-radius: 50%;
+    }
+.nose{
+    width: 5px;
+	height: 10px;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid lavender;
+    position: absolute;
+    top: 20%;
+    left: 51%;
+}
+.mouth {
+    width: 100px;
+    height: 40px; /* as the half of the width */
+    background-color: palevioletred;
+    border-bottom-left-radius: 100px;  /* 100px of height + 10px of border */
+    border-bottom-right-radius: 100px; /* 100px of height + 10px of border */
+    position: absolute;
+    top: 24%;
+    left: 46%;
+}
+.teeth{
+    width: 15px;
+    height: 10px;
+    border-radius: 10px;
+    background: white;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+.teeth2{
+    width: 15px;
+    height: 10px;
+    border-radius: 10px;
+    background: white;
+    position: absolute;
+    top: 10%;
+    left: 21%;
+}
+.teeth3{
+    width: 15px;
+    height: 10px;
+    border-radius: 10px;
+    background: white;
+    position: absolute;
+    top: 10%;
+    left: 32%;
+}
+.teeth4{
+    width: 15px;
+    height: 10px;
+    border-radius: 10px;
+    background: white;
+    position: absolute;
+    top: 10%;
+    left: 43%;
+}
+.teeth5{
+    width: 15px;
+    height: 10px;
+    border-radius: 10px;
+    background: white;
+    position: absolute;
+    top: 10%;
+    left: 54%;
+}
+.teeth6{
+    width: 15px;
+    height: 10px;
+    border-radius: 10px;
+    background: white;
+    position: absolute;
+    top: 10%;
+    left: 65%;
+}
+.teeth7{
+    width: 15px;
+    height: 10px;
+    border-radius: 10px;
+    background: white;
+    position: absolute;
+    top: 10%;
+    left: 76%;
+}
+.teeth8{
+    width: 15px;
+    height: 10px;
+    border-radius: 10px;
+    background: white;
+    position: absolute;
+    top: 60%;
+    left: 25%;
+}
+.teeth9{
+    width: 15px;
+    height: 10px;
+    border-radius: 10px;
+    background: white;
+    position: absolute;
+    top: 60%;
+    left: 36%;
+}
+.teeth10{
+    width: 15px;
+    height: 10px;
+    border-radius: 10px;
+    background: white;
+    position: absolute;
+    top: 60%;
+    left: 47%;
+}
+.teeth11{
+    width: 15px;
+    height: 10px;
+    border-radius: 10px;
+    background: white;
+    position: absolute;
+    top: 60%;
+    left: 58%;
+}
+.innermouth{
+    width: 40px;
+    height: 25px;
+    border-radius: 10px;
+    background: lightpink;
+    position: absolute;
+    top: 10%;
+    left: 26%; 
+}
+.armleft{
+    width: 30px;
+	height: 50px;
+    background: rebeccapurple;
+    position: absolute;
+    top: 57.5%;
+    left:42%;
+} 
+.armright{
+    width: 30px;
+	height: 50px;
+    background: rebeccapurple;
+    position: absolute;
+    top: 57.5%;
+    right:39.5%;
+} 
+ .purse{
+    border-bottom: 50px solid yellow;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	height: 0;
+	width: 100px;
+    position: absolute;
+    top: 65%;
+    left: 38%;
+}
+.glove{
+    width: 36px;
+	height: 35.5px;
+    background-color: lightyellow;
+    position: absolute;
+    top: 62%;
+    right:39.2%;
+}
+.glove2{
+    width:3px;
+	height: 20px;
+    background-color: black;
+    position: absolute;
+    top: 65%;
+    right:42%;
+}

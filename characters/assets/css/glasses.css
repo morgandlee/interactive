@@ -1,0 +1,207 @@
+/*
+
+CSS DRAWINGS s2018
+
+* * * * * * * * * * * * * * * * * *
+
+Full CSS Reset
+
+http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+/*
+  ========================================
+  Box model reset
+  ========================================
+*/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*
+  ========================================
+  Grid
+  ========================================
+*/
+
+.canvas {
+    display: block;
+    position: relative;
+    background-color: rgb(240,240,240);
+    border: solid 20px rgb(245,245,245);
+    box-shadow: 15px 15px 25px rgba(230, 222, 159, 0.78);
+    margin: 60px auto;
+    padding: 20px;
+    width: 900px;
+    height: 600px;
+}
+
+/*
+  ========================================
+  General
+  ========================================
+*/
+
+body{
+    background-color: rgb(255, 248, 224);
+}
+.eye-left{
+    width: 90px;
+    height: 90px;
+    border-radius: 50px;
+    background: white;
+    position: absolute;
+    top: 32%;
+    left: 31%;
+}
+.glasses-left{
+    width: 110px;
+    height: 110px;
+    border-radius: 1100px;
+    background: goldenrod;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+}
+.pupil-left{
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background: black;
+    position: absolute;
+    top: 40%;
+    left: 35%; 
+}
+.eye-right{
+    width: 180px;
+    height: 180px;
+    border-radius: 180px;
+    background: white;
+    position: absolute;
+    top: 25%;
+    right: 22%;
+}
+.glasses-right{
+    width: 220px;
+    height: 220px;
+    border-radius: 220px;
+    background: goldenrod;
+    position: absolute;
+    top: 20%;
+    right: 20%;
+}
+.pupil-right{
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    background: black;
+    position: absolute;
+    top: 40%;
+    right: 30%; 
+}
+.bridge{
+    width: 120px;
+    height: 20px;
+    background: goldenrod;
+    position: absolute;
+    top: 40%;
+    left: 42%; 
+}
+.nose{
+    width: 0;
+	height: 0;
+	border-bottom: 100px solid brown;
+	border-left: 100px solid transparent;
+    position: absolute;
+    top: 50%;
+    left: 30%; 
+}
+.smile{
+    width: 120px;
+    height: 20px;
+    background-color: darkolivegreen;
+    position: absolute;
+    top: 80%;
+    left: 40%; 
+}
+.hair{
+    width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-bottom: 50px solid black;
+    position: absolute;
+    top: 5%;
+    right: 35%; 
+}
+.hair2{
+    width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-bottom: 50px solid black;
+    position: absolute;
+    top: 5%;
+    right: 30%; 
+}
+.hair3{
+    width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-bottom: 50px solid black;
+    position: absolute;
+    top: 5%;
+    right: 25%; 
+}

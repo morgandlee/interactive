@@ -1,0 +1,377 @@
+/*
+
+CSS DRAWINGS s2018
+
+* * * * * * * * * * * * * * * * * *
+
+Full CSS Reset
+
+http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+/*
+  ========================================
+  Box model reset
+  ========================================
+*/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*
+  ========================================
+  Grid
+  ========================================
+*/
+
+.canvas {
+    display: block;
+    position: relative;
+    background-color: rgb(240,240,240);
+    border: solid 20px rgb(245,245,245);
+    box-shadow: 15px 15px 25px rgba(230, 222, 159, 0.78);
+    margin: 60px auto;
+    padding: 20px;
+    width: 900px;
+    height: 600px;
+}
+
+/*
+  ========================================
+  General
+  ========================================
+*/
+
+body{
+    background-color: rgb(255, 248, 224);
+}
+
+.head {
+	width: 200px;
+	height: 200px;
+	background-color: burlywood;
+	border-radius: 100px;
+    position: absolute;
+    top: 10%;
+    left: 31%;
+}
+.body {
+	width: 300px;
+	height: 300px;
+	background: white;
+	border-radius: 300px;
+    position: absolute;
+    top: 30%;
+    left: 25%;
+}
+.pants {
+    width: 300px;
+    height: 150px; /* as the half of the width */
+    background-color: purple;
+    border-bottom-left-radius: 300px;  /* 100px of height + 10px of border */
+    border-bottom-right-radius: 300px; /* 100px of height + 10px of border */
+    position: absolute;
+    top: 50%;
+    left: 0%;
+}
+.tie {
+    width: 40px;
+    height: 100px;
+    position: relative;
+    background: black;
+    position: absolute;
+    top: 17%;
+    left: 43%;
+  }
+.tie:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 20px solid white;
+    border-top: 20px solid transparent;
+}
+.tie:before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-right: 20px solid white;
+    border-top: 20px solid transparent;
+  }
+.eye-left{
+    position: absolute;
+    background-color: darkgreen;
+    width: 20px;
+    height: 25px;
+    top: 40%;
+    left: 25%;
+    border-radius: 50%;
+    }
+.eye-right{
+    position: absolute;
+    background-color: darkgreen;
+    width: 20px;
+    height: 25px;
+    top: 40%;
+    right: 25%;
+    border-radius: 50%;
+    }
+.mouth {
+    width: 100px;
+    height: 50px; /* as the half of the width */
+    background-color: lightpink;
+    border-bottom-left-radius: 100px;  /* 100px of height + 10px of border */
+    border-bottom-right-radius: 100px; /* 100px of height + 10px of border */
+    position: absolute;
+    top: 60%;
+    left: 25%;
+}
+.eyebrow-left{
+    width: 20px;
+	height: 5px;
+	-webkit-transform: skew(80deg);
+	   -moz-transform: skew(20deg);
+	     -o-transform: skew(20deg);
+	background: brown;
+    position: absolute;
+    top: 30%;
+    left: 25%;
+}
+.eyebrow-right{
+    width: 20px;
+	height: 5px;
+	-webkit-transform: skew(-80deg);
+	   -moz-transform: skew(20deg);
+	     -o-transform: skew(20deg);
+	background: brown;
+    position: absolute;
+    top: 30%;
+    right: 25%;
+}
+.hair-left{
+    width: 50px;
+    height: 45px; /* as the half of the width */
+    background-color: brown;
+    border-top-left-radius: 50px;  /* 100px of height + 10px of border */
+    position: absolute;
+    top: 3%;
+    left: 7%;
+}
+.hair-right{
+    width: 50px;
+    height: 45px; /* as the half of the width */
+    background-color: brown;
+    border-top-right-radius: 50px;  /* 100px of height + 10px of border */
+    position: absolute;
+    top: 3%;
+    right: 7%;
+}
+.money{
+    width:100px;
+    height: 50px;
+    background: green;
+    position: absolute;
+    bottom: 5%;
+    left: 16%;
+    border: solid 10px lightgreen;
+}
+.money2{
+    width:100px;
+    height: 50px;
+    background: green;
+    position: absolute;
+    bottom: 10%;
+    left: 30%;
+    border: solid 10px lightgreen;
+}
+.money3{
+    width:100px;
+    height: 50px;
+    background: green;
+    position: absolute;
+    bottom: 15%;
+    left: 25%;
+    border: solid 10px lightgreen;
+}
+.money4{
+    width:100px;
+    height: 50px;
+    background: green;
+    position: absolute;
+    bottom: 8%;
+    left: 45%;
+    border: solid 10px lightgreen;
+}
+.money5{
+    width:100px;
+    height: 50px;
+    background: green;
+    position: absolute;
+    bottom: 17%;
+    left: 38%;
+    border: solid 10px lightgreen;
+}
+.money6{
+    width:100px;
+    height: 50px;
+    background: green;
+    position: absolute;
+    bottom: 4%;
+    left: 34%;
+    border: solid 10px lightgreen;
+}
+.money7{
+    width:100px;
+    height: 50px;
+    background: green;
+    position: absolute;
+    bottom: 16%;
+    left: 47%;
+    border: solid 10px lightgreen;
+}
+.money8{
+    width:100px;
+    height: 50px;
+    background: green;
+    position: absolute;
+    bottom: 5%;
+    left: 55%;
+    border: solid 10px lightgreen;
+}
+.money9{
+    width:100px;
+    height: 50px;
+    background: green;
+    position: absolute;
+    bottom: 25%;
+    left: 52%;
+    border: solid 10px lightgreen;
+}
+.money10{
+    width:100px;
+    height: 50px;
+    background: green;
+    position: absolute;
+    bottom: 20%;
+    left: 56%;
+    border: solid 10px lightgreen;
+}
+.money11{
+    width:100px;
+    height: 50px;
+    background: green;
+    position: absolute;
+    bottom: 14%;
+    left: 60%;
+    border: solid 10px lightgreen;
+}
+.money12{
+    width:100px;
+    height: 50px;
+    background: green;
+    position: absolute;
+    bottom: 8%;
+    left: 66%;
+    border: solid 10px lightgreen;
+}
+.money13{
+    width:100px;
+    height: 50px;
+    background: green;
+    position: absolute;
+    bottom: 20%;
+    left: 22%;
+    border: solid 10px lightgreen;
+}
+.money14{
+    width:100px;
+    height: 50px;
+    background: green;
+    position: absolute;
+    bottom: 12%;
+    left: 35%;
+    border: solid 10px lightgreen;
+}
+.money15{
+    width:100px;
+    height: 50px;
+    background: green;
+    position: absolute;
+    bottom: 14%;
+    left: 19%;
+    border: solid 10px lightgreen;
+}
+.money16{
+    width:100px;
+    height: 50px;
+    background: green;
+    position: absolute;
+    bottom: 6%;
+    left: 24%;
+    border: solid 10px lightgreen;
+}
+.money17{
+    width:100px;
+    height: 50px;
+    background: green;
+    position: absolute;
+    bottom: 12%;
+    left: 54%;
+    border: solid 10px lightgreen;
+}
