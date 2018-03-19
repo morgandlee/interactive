@@ -1,4 +1,7 @@
-
+@font-face{
+    font-family: optima;
+    src:url("../fonts/optima.ttf")
+}
 h2{
     color:white;
     font-size: 30px;
@@ -12,7 +15,7 @@ body {
     padding-right: 10px;
     width:960px;
     font-size: 15px;
-    font-family: 'helvetica', sans-serif;
+    font-family: optima, sans-serif;
     background-color: lightsteelblue;
     }
 
