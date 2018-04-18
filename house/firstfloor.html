@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>House Home Page</title>
+        <link rel="stylesheet" href="assets/css/about.css">
+        <link href="https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="sidemenu"> 
+            <div class="btn-home">
+                <a href="house_home.html">
+                    <h1>Home</h1>
+                </a>
+            </div>
+            <div class=" btn-about">
+                <a href="about.html"><h1>About</h1></a>
+            </div>
+            <div class="btn-rooms ">
+                <div class="dropdown"><a href="rooms.html"><h1>Rooms</h1></a>
+                    <i class="fa fa-caret-down"></i>
+                    <div class="dropdown-content">
+                        <a href="firstfloor.html">First Floor</a>
+                        <a href="secondfloor.html">Second Floor</a>
+                        <a href="secondfloor.html">Third Floor</a>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-contact">
+                <a href="contact.html"><h1>Contact</h1></a>
+            </div>
+        </nav>
+
+        <section class="content firstfloor">
+            <div class="first_floor_title">
+                <h2><br><br><br><br><br><br><br><br>First Floor</h2>
+                <h3>Move Right</h3>
+            </div>
+           <!---- </div>
+            <div class="kitchen"> kitchen   
+            </div>   ---->
+
+        </section>    
+            
+            
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  
+    <script>  
+       $(function(){
+           // Create debug element
+           $("body").append("<div style='position:fixed;top:5px;left:5px;' id='viewportwidth'></div>");
+           
+           // Set contents on resizing window
+           $(window).resize(function(){$("#viewportwidth").html($(window).width());});
+           
+           // Trigger resize event
+           $(window).resize();
+       });
+       </script>
+    </body>
+</html>

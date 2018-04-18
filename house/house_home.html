@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>House Home Page</title>
+        <link rel="stylesheet" href="assets/css/house_home.css">
+    </head>
+    <body>
+        <nav>
+            <div class="vertical_menu about">
+                <a href="about.html"><h1>About</h1></a>
+            </div>
+            <div class="vertical_menu rooms">
+                <a href="rooms.html"><h1>Rooms</h1></a>
+            </div>
+            <div class="vertical_menu contact">
+                <a href="contact.html"><h1>Contact</h1></a>
+            </div>
+        </nav>
+   
+        <!-- let's call the following div as the POPUP FRAME --
+        <div id="popup">
+        
+            <img src="http://i.imgur.com/cVJrCHU.jpg" alt="popup">
+        <button id="close">Close button</button>
+        </div>-->
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  
+    <script>  
+       $(function(){
+           // Create debug element
+           $("body").append("<div style='position:fixed;top:5px;left:5px;width:200px;height:30px;z-index:3;' id='viewportwidth'></div>");
+           
+           // Set contents on resizing window
+           $(window).resize(function(){$("#viewportwidth").html($(window).width());});
+           
+           // Trigger resize event
+           $(window).resize();
+       });
+        /*
+        $(document).ready(function () {
+
+                //select the POPUP FRAME and show it
+                $("#popup").hide().fadeIn(1000);
+
+                //close the POPUP if the button with id="close" is clicked
+                $("#close").on("click", function (e) {
+                    e.preventDefault();
+                    $("#popup").fadeOut(1000);
+                });
+            });    
+        */
+        
+        
+       </script>
+    </body>
+</html>
