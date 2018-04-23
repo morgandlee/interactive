@@ -60,6 +60,7 @@ table {
 body{
     font-family: futura;
     font-size: 5vw;
+    background: antiqu;
 }
 
 /********nav*********/
@@ -172,12 +173,23 @@ a:hover{
     background-color: antiquewhite;
 }
 p{
-    font-size: 20px;
+    font-size: 30%;
     padding: 15px;
     float: right;
     font-family: 'Sorts Mill Goudy', serif;
-    text-align: justify;
+    text-align: center;
 }
+.outsideimg{
+    width: 500px;
+    float: center;
+    margin: 15px;
+}
+
+/**.mylespic{
+    background-image: url(assets/images/myles_outside.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}**/
 
 /*****rooms******/
 .rooms_title{
@@ -190,16 +202,38 @@ p{
 }
 .floorlinks{
     text-align: center;
+    margin: 20px;
+}
+.grow:hover{
+        -webkit-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        transform: scale(1.5);
+}
+path {
+  fill: transparent;
+}
+
+.rotate:hover
+{
+        -webkit-transform: rotateZ(-180deg);
+        -ms-transform: rotateZ(-180deg);
+        transform: rotateZ(-180deg);
+}
+h5{
+    margin: 20px 20px 0px 20px;
+    text-align: justify;
+    color: teal;
+    font-size: 70%
 }
 /*********First floor CONTENT********/
 .content {
     width: 80vw;
+    height: 768px;
     float: right;
+    display: block;
+    /**border: 10px solid;**/
 }
-.firstfloor{
-    width: 78vw;
-    height: 100vh;
-}
+
 #draggy{
     position: relative;
     height: 300px;
@@ -211,11 +245,11 @@ p{
 
 .first_floor_title {
     font-size: 70px;
-    text-align: right;
+    text-align: center;
     width: 78vw;
     height: 100vh;
     color: darkslategray;
-    display: inline-block;
+    display: block;
     margin: 10px 20px 10px 10px;
     vertical-align: bottom;
     /***border: 2px solid black;***/
@@ -224,19 +258,36 @@ p{
 h3 {
     font-family: 'Sorts Mill Goudy', serif;
     font-size: 40px;    
-    text-align: right; 
-    vertical-align: bottom;
-    margin: 10px 20px 10px 10px;
+    text-align: center; 
+    margin: 30px 10px 0px 10px;
+    display: inline-block;
 }
 
+.firstfloor{
+    text-align: center;
+    float: center;
+    display: inline-block;
+    font-size: 30%;
+    padding: 15px;
+    margin: 0px 10px 0px 10px;
+    position: relative;
+}
 /*** img {
     width: 100%;
     float: right;
 } **/
 
-.outsideimg{
-    width: 50%;
+a img { 
+    display: none;
+    text-align: center;
+}
+a:hover img { 
+    display:block;
+    image-resolution: from-image cover}
+.onepic{
+    width: 80vw;
     float: center;
+    padding: 0px 20px 10px 0px;
 }
 /*******contact*******/
 .map{
@@ -245,3 +296,20 @@ h3 {
     margin: 20px 20px 20px 20px;
     float: right;
 }
+
+
+
+/****responsive***/
+
+@media all and (max-width: 996px){
+    .container{
+        max-width: 538px;
+}
+    .firstfloor{
+        text-align: center;
+        float: center;
+        display: block;
+        font-size: 30%;
+        padding: 15px;
+        position: relative;
+    }
