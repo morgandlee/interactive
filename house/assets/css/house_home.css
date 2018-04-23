@@ -104,6 +104,11 @@ header{
     .container{
         max-width: 538px;
 }
+    body{
+        font-family: futura;
+        font-size: 5vw;
+        background: antiqu;
+    }
     .vertical_menu{
         display: block;
         width: 100vw;
