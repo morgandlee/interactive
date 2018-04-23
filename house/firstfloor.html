@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>House Home Page</title>
+        <title>First Floor</title>
         <link rel="stylesheet" href="assets/css/about.css">
         <link href="https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy" rel="stylesheet">
     </head>
@@ -40,6 +40,20 @@
                 <!--<h3>Move Right</h3>-->
                 <h3>Points of Interest</h3>
             <div >
+                <!--                <button id="myBtn">Kitchen</button>
+                <div id="myModal" class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <img src="assets/images/kitchen.jpg"/>
+                  </div>
+                </div>
+                <button id="myBtn">Laundry Room</button>
+                <div id="myModal" class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <img src="assets/images/laundry.jpg"/>
+                  </div>
+                </div>-->
                 <div class="firstfloor">
                     <a href="#">Kitchen<img src="assets/images/kitchen.jpg"/></a>
                 </div>
@@ -71,6 +85,28 @@
     <!--  
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  
 <script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+
+
        $(function(){
            // Create debug element
            $("body").append("<div style='position:fixed;top:5px;left:5px;' id='viewportwidth'></div>");
